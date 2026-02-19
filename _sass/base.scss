@@ -46,7 +46,30 @@ a.pub-link:hover { text-decoration: underline; }
 header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
 footer { font-size: 13px; margin: 20px auto 15px;  padding-top: 10px;  text-align: right; margin-bottom: 20px; }
-.page-banner { width: 100%; display: block; mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); mask-composite: intersect; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-composite: source-in; }
+/** Banner wrapper */
+.banner-wrapper { width: 100%; }
+/**
+ * Banner image with independent edge fade control and color toning.
+ * --banner-fade-tb: fade distance for top & bottom edges
+ * --banner-fade-lr: fade distance for left & right edges
+ * --banner-sepia: sepia warmth (0 = none, 1 = full sepia)
+ * --banner-saturation: color saturation (1 = original, 0 = grayscale)
+ */
+.page-banner {
+  --banner-fade-tb: 10%;
+  --banner-fade-lr: 2.5%;
+  --banner-sepia: 0.5;
+  --banner-saturation: 0.8;
+  width: 100%;
+  display: block;
+  filter: sepia(var(--banner-sepia)) saturate(var(--banner-saturation));
+  mask-image: linear-gradient(to bottom, transparent 0%, black var(--banner-fade-tb), black calc(100% - var(--banner-fade-tb)), transparent 100%),
+              linear-gradient(to right, transparent 0%, black var(--banner-fade-lr), black calc(100% - var(--banner-fade-lr)), transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black var(--banner-fade-tb), black calc(100% - var(--banner-fade-tb)), transparent 100%),
+                      linear-gradient(to right, transparent 0%, black var(--banner-fade-lr), black calc(100% - var(--banner-fade-lr)), transparent 100%);
+  -webkit-mask-composite: source-in;
+}
 .title-row { display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px; margin-bottom: 10px; }
 .title-row h1 { margin-bottom: 0; }
 .name-block { display: flex; flex-direction: column; }

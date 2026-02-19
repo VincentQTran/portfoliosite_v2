@@ -3,7 +3,9 @@ layout: default
 ---
 
 {% if page.banner %}
-<img src="{{ page.banner }}" alt="Banner" class="page-banner">
+<div class="banner-wrapper">
+  <img src="{{ page.banner }}" alt="Banner" class="page-banner">
+</div>
 {% endif %}
 
 {% if page.title %}
