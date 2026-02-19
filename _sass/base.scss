@@ -15,9 +15,9 @@ $container-max-width:  600px !default;
  * Global
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
-h1 { font-size: 28px;  margin: 0px;  margin-top: 22px; font-weight: 400; color: rgb(5, 47, 173); margin-bottom: 12px;}
-h2 { font-size: 24px;  margin: 0px;  margin-top: 22px; font-weight: 400; color: rgb(5, 47, 173); margin-bottom: 12px;}
-h3 { font-size: 20px;  margin: 0px;  margin-top: 22px; font-weight: 400; color: rgb(5, 47, 173); margin-bottom: 12px;}
+h1 { font-size: 28px;  margin: 0px;  margin-top: 22px; font-weight: 400; color: #8B5A3C; margin-bottom: 12px;}
+h2 { font-size: 24px;  margin: 0px;  margin-top: 22px; font-weight: 400; color: #8B5A3C; margin-bottom: 12px;}
+h3 { font-size: 20px;  margin: 0px;  margin-top: 22px; font-weight: 400; color: #8B5A3C; margin-bottom: 12px;}
 h4 { font-size: 14px; font-weight: 400;}
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
@@ -37,7 +37,7 @@ a.pub-link:hover { text-decoration: underline; }
 header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
 footer { font-size: 14px; margin: 20px auto 15px;  padding-top: 10px;  text-align: right; margin-bottom: 20px; }
-.page-banner { width: 100%; display: block; }
+.page-banner { width: 100%; display: block; mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); mask-composite: intersect; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); -webkit-mask-composite: source-in; }
 .title-row { display: flex; justify-content: space-between; align-items: baseline; }
 .title-row h1 { margin-bottom: 15px; }
 .social-icons { display: flex; gap: 12px; align-items: center; padding-top: 22px; }
@@ -63,7 +63,7 @@ footer { font-size: 14px; margin: 20px auto 15px;  padding-top: 10px;  text-alig
 .menu { margin-bottom: 25px; }
 .menu ul { margin-top: 12px;  margin-bottom: 12px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
 .menu ul li { display: inline;  margin-left: 10px; }
-.menu ul li a { text-decoration: none;  color: rgba(6, 51, 187, 0.959); font-weight: 600; font-size: 14px; }
+.menu ul li a { text-decoration: none;  color: #8B5A3C; font-weight: 600; font-size: 14px; }
 .menu ul li a:hover { text-decoration: none; color: var(--background-color); background-color: var(--base-color); }
 
 /**
