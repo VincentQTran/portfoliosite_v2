@@ -15,7 +15,7 @@ Apart from my work in biology, you may find me fixing my serve at the tennis cou
 
 ## Selected Publications
 
-<div class="pub"><strong>Rapid directed evolution guided by protein language models and epistatic interactions</strong><span class="pub-detail"><strong>V. Q. Tran</strong>, M. Nemeth, L. J. Bartie, S. S. Chandrasekaran, A. Fanton, H. C. Moon, B. L. Hie, S. Konermann, P. D. Hsu.</span><span class="pub-journal"><em>Science</em>. 2026</span></div>
+<div class="pub"><a class="pub-link" href="https://doi.org/10.1126/science.aea1820"><strong>Rapid directed evolution guided by protein language models and epistatic interactions</strong></a><span class="pub-detail"><strong>V. Q. Tran</strong>, M. Nemeth, L. J. Bartie, S. S. Chandrasekaran, A. Fanton, H. C. Moon, B. L. Hie, S. Konermann, P. D. Hsu.</span><span class="pub-journal"><em>Science</em>. 2026</span></div>
 
 <div class="pub"><a class="pub-link" href="https://www.science.org/doi/abs/10.1126/science.ads0018"><strong>Simulating 500 million years of evolution with a language model</strong></a><span class="pub-detail">T. Hayes*, R. Rao*, H. Akin*, N. J. Sofroniew*, D. Oktay*, Z. Lin*, R. Verkuil*, <strong>V. Q. Tran</strong>, J. Deaton, M. Wiggert, R. Badkundri, I. Shafkat, J. Gong, A. Derry, R. S. Molina, N. Thomas, Y. A. Khan, C. Mishra, C. Kim, L. J. Bartie, M. Nemeth, P. D. Hsu, T. Sercu, S. Candido, A. Rives.</span><span class="pub-journal"><em>Science</em>. 2025</span></div>
 
