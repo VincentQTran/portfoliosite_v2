@@ -6,7 +6,7 @@
  */
 $base-font-family:     "Red Hat Mono", monospace !default;
 $base-font-size:       16px !default;
-$mobile-font-size:     12px !default;
+$mobile-font-size:     13px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  600px !default;
@@ -28,9 +28,9 @@ a:hover { color: var(--background-color); background-color: var(--base-color); }
   h2 { font-size: 15px !important; }
   h3 { font-size: 14px !important; }
   h4 { font-size: 13px !important; }
-  .pub-detail { font-size: 10px !important; }
-  footer { font-size: 10px !important; }
-  .menu ul li a { font-size: 11px !important; }
+  .pub-detail { font-size: 12px !important; }
+  footer { font-size: 12px !important; }
+  .menu ul li a { font-size: 12px !important; }
 }
 
 /**
