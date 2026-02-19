@@ -1,13 +1,10 @@
-# Example Site settings
+# Site settings
 
 #google_analytics: UA-NNNNNNNN-N
 
-header_pages:
- - about.md
- - bioAI.md
- - film.md
+header_pages: []
 
-footer: '<a href="https://www.linkedin.com/in/vincenttran1/">Linkedin</a> <a href="https://www.youtube.com/channel/UCG6IPdYT-cdP9vA0peP8FFw">YouTube</a>'
+footer: ''
 
 style: light # dark (default) or light
 listen_for_clients_preferred_style: false # true or false (default)
