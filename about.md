@@ -2,6 +2,7 @@
 layout: page
 title: Vincent (Vince) Quy Tran
 permalink: /
+banner: /720p_cropped.gif
 ---
 
 Hi,
