@@ -19,12 +19,12 @@ $container-max-width:  720px !default;
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $body-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
 h1, h2, h3, h4 { font-family: $heading-font-family; }
-h1 { font-size: 28px;  margin: 0px;  margin-top: 28px; font-weight: 400; color: #8B5A3C; margin-bottom: 16px;}
-h2 { font-size: 24px;  margin: 0px;  margin-top: 36px; font-weight: 400; color: #8B5A3C; margin-bottom: 16px; padding-top: 20px; border-top: 1px solid rgba(139, 90, 60, 0.15); }
-h3 { font-size: 20px;  margin: 0px;  margin-top: 24px; font-weight: 400; color: #8B5A3C; margin-bottom: 14px;}
+h1 { font-size: 28px;  margin: 0px;  margin-top: 28px; font-weight: 400; color: var(--accent); margin-bottom: 16px;}
+h2 { font-size: 24px;  margin: 0px;  margin-top: 36px; font-weight: 400; color: var(--accent); margin-bottom: 16px; padding-top: 20px; border-top: 1px solid rgba(139, 90, 60, 0.15); }
+h3 { font-size: 20px;  margin: 0px;  margin-top: 24px; font-weight: 400; color: var(--accent); margin-bottom: 14px;}
 h4 { font-size: 18px; font-weight: 400;}
 p, ul, ol { margin: 0px;  color: var(--text-color); }
-a { text-decoration: underline;  color: var(--link-color); }
+a { text-decoration: underline;  color: var(--link-color); transition: color 0.2s ease; }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
 @media only screen and (max-width: 500px) {
   body { font-size: $mobile-font-size; }
@@ -80,7 +80,7 @@ footer { font-size: 13px; margin: 36px auto 24px;  padding-top: 16px;  text-alig
 .profile-pic { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; object-position: center 30%; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); }
 .social-icons { display: flex; gap: 12px; align-items: center; margin-top: 6px; }
 .social-icons a { color: var(--text-color); text-decoration: none; display: flex; transition: color 0.2s ease, transform 0.2s ease; }
-.social-icons a:hover { color: #8B5A3C; background-color: transparent; transform: scale(1.15); }
+.social-icons a:hover { color: var(--accent); background-color: transparent; transform: scale(1.15); }
 .social-icons svg { width: 22px; height: 22px; }
 
 /**
@@ -102,7 +102,7 @@ footer { font-size: 13px; margin: 36px auto 24px;  padding-top: 16px;  text-alig
 .menu { margin-bottom: 32px; }
 .menu ul { margin-top: 12px;  margin-bottom: 12px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
 .menu ul li { display: inline;  margin-left: 10px; }
-.menu ul li a { text-decoration: none;  color: #8B5A3C; font-weight: 600; font-size: 14px; font-family: $heading-font-family; }
+.menu ul li a { text-decoration: none;  color: var(--accent); font-weight: 600; font-size: 14px; font-family: $heading-font-family; transition: color 0.2s ease; }
 .menu ul li a:hover { text-decoration: none; color: var(--background-color); background-color: var(--base-color); }
 
 /**

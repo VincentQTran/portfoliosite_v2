@@ -1,16 +1,21 @@
 /**
  * Light theme variables
+ * Warm palette derived from the landscape banner tones.
+ * --accent: primary brown used for headings, links, and interactive elements
+ * --accent-hover: darker brown for hover states
  */
 
 :root {
-  --base-color: #000000e3;
-  --border: solid 4px rgba(171, 6, 17, 0.973); 
-  --selection-background: rgba(0, 0, 0, 0.99);
+  --base-color: #2C2825;
+  --accent: #8B5A3C;
+  --accent-hover: #6B4430;
+  --border: solid 4px var(--accent);
+  --selection-background: #8B5A3C;
   --selection-text: #FFF;
-  --background-color: #FFF;
+  --background-color: #FDFAF6;
   --text-color: var(--base-color);
-  --placeholder-color: var(--base-color);
-  --link-color: var(--base-color);
+  --placeholder-color: #9E958D;
+  --link-color: var(--accent);
   --code-color-1: #aaaaaa;
   --code-color-2: #ffffcc;
   --code-color-3: #F00000;
