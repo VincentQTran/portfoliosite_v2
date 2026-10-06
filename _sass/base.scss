@@ -192,7 +192,7 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 $tl-start-year: 2014;
 $tl-months: 180;
 $tl-label-width: 15rem;
-@function tl-x($year, $month) { @return percentage(calc((($year - $tl-start-year) * 12 + $month - 1) / $tl-months)); }
+@function tl-x($year, $month) { @return percentage((($year - $tl-start-year) * 12 + $month - 1) / $tl-months); }
 @mixin tl-span($y1, $m1, $y2, $m2) { left: tl-x($y1, $m1); width: tl-x($y2, $m2 + 1) - tl-x($y1, $m1); }
 
 .timeline {
@@ -216,7 +216,7 @@ $tl-label-width: 15rem;
   position: relative;
   height: 28px;
   background-image: linear-gradient(to right, var(--tl-grid) 1px, transparent 1px);
-  background-size: percentage(calc(24 / $tl-months)) 100%;
+  background-size: percentage(24 / $tl-months) 100%;
   border-right: 1px dashed var(--tl-grid);
 }
 .tl-track::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px dashed var(--tl-grid); }
