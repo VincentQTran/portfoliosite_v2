@@ -7,9 +7,9 @@ banner: /720p_cropped.gif
 
 Hi, 
 
-1 // I am a scientist that works at the intersection of AI and experimental biology to engineer better biologics for research and human therapeutics. I am especially interested in the development of machine learning methods for accelerated protein engineering. I am currently a postdoctoral researcher at the [Arc Institute](https://arcinstitute.org/), working with Dr. Patrick D. Hsu.
+1 // I am a scientist that works at the intersection of AI and experimental biology to engineer better biologics for research and human therapeutics. I am especially interested in the development of machine learning methods for accelerated protein engineering. I am currently a founding scientist at [Onava](https://onava.ai/), developing Onava's platform, which tightly integrates agentic AI with protein engineering to develop therapeutics.
 
-2 // Previously, I was an undergraduate at [UCLA](https://www.ucla.edu/), where I studied HIV drug resistance mechanisms and received my B.Sc. in Biochemistry. I received my PhD in Chemistry from [UCB](https://chemistry.berkeley.edu/), working in the [Hsu Lab](https://arcinstitute.org/labs/hsulab). During my PhD, I investigated methods to engineer genome/transcriptome-editing proteins including CRISPR-Cas systems and large serine recombinases.
+2 // Previously, I was an undergraduate at [UCLA](https://www.ucla.edu/), where I studied HIV drug resistance mechanisms and received my B.Sc. in Biochemistry. I received my PhD in Chemistry from [UCB](https://chemistry.berkeley.edu/), working in the [Hsu Lab](https://arcinstitute.org/labs/hsulab). During my PhD, I investigated methods to engineer genome/transcriptome-editing proteins including CRISPR-Cas systems and large serine recombinases. I then continued as a postdoctoral researcher at the [Arc Institute](https://arcinstitute.org/), working with Dr. Patrick D. Hsu.
 
 3 // Apart from my work in biology, you may find me fixing my serve at the tennis court, replaying songs by [Porter Robinson](https://porterrobinson.com/), or holding a [ZV-E1](https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilczve1-b?srsltid=AfmBOoo72o1lCGdVkzeaB-FbwMjyOribLXIrGL_qAOi64W1AyfmWVRMG) and filming random vlogs.
 
