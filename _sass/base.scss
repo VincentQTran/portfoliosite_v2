@@ -183,3 +183,59 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+
+/**
+ * Timeline (_includes/timeline.html)
+ * Bars sit on a shared time axis from Jan 2014 to Jan 2029. Positions are
+ * computed here because the page CSP blocks inline style attributes.
+ */
+$tl-start-year: 2014;
+$tl-months: 180;
+$tl-label-width: 15rem;
+@function tl-x($year, $month) { @return percentage(calc((($year - $tl-start-year) * 12 + $month - 1) / $tl-months)); }
+@mixin tl-span($y1, $m1, $y2, $m2) { left: tl-x($y1, $m1); width: tl-x($y2, $m2 + 1) - tl-x($y1, $m1); }
+
+.timeline {
+  --tl-ink: var(--accent, var(--base-color));
+  --tl-tint: color-mix(in srgb, var(--tl-ink) 28%, transparent);
+  --tl-grid: color-mix(in srgb, var(--tl-ink) 14%, transparent);
+  margin: 8px 0 28px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.tl-caption { font-family: $heading-font-family; color: var(--tl-ink); margin-bottom: 10px; }
+.tl-axis { position: relative; height: 1.4em; margin-left: calc(#{$tl-label-width} + 12px); color: var(--placeholder-color); font-size: 11px; }
+.tl-tick { position: absolute; top: 0; transform: translateX(-50%); }
+@each $y in (2014, 2016, 2018, 2020, 2022, 2024, 2026, 2028) { .tl-y#{$y} { left: tl-x($y, 1); } }
+.tl-rows { list-style: none; margin: 0; padding: 0; }
+.tl-row { display: grid; grid-template-columns: $tl-label-width 1fr; column-gap: 12px; align-items: center; padding: 5px 0; }
+.tl-place { font-family: $heading-font-family; font-weight: 600; color: var(--tl-ink); }
+.tl-role::before { content: " · "; color: var(--placeholder-color); }
+.tl-dates { display: block; color: var(--placeholder-color); font-size: 12px; }
+.tl-track {
+  position: relative;
+  height: 28px;
+  background-image: linear-gradient(to right, var(--tl-grid) 1px, transparent 1px);
+  background-size: percentage(calc(24 / $tl-months)) 100%;
+  border-right: 1px dashed var(--tl-grid);
+}
+.tl-track::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px dashed var(--tl-grid); }
+.tl-bar { position: absolute; top: 50%; height: 10px; margin-top: -5px; border-radius: 5px; z-index: 1; }
+.tl-ucla  { @include tl-span(2014, 9, 2018, 6);  background: var(--tl-tint); }
+.tl-yale  { @include tl-span(2018, 8, 2019, 12); background: var(--tl-tint); }
+.tl-ucb   { @include tl-span(2020, 1, 2024, 12); background: var(--tl-tint); }
+.tl-arc   { @include tl-span(2025, 1, 2026, 5);  background: var(--tl-tint); }
+.tl-onava { @include tl-span(2026, 7, 2027, 6); background: linear-gradient(to right, var(--tl-ink) 35%, transparent); border-radius: 5px 0 0 5px; }
+.tl-now { position: absolute; top: 50%; left: tl-x(2026, 7); width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; background: var(--tl-ink); z-index: 2; animation: tl-pulse 2s ease-out infinite; }
+@keyframes tl-pulse {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--tl-ink) 55%, transparent); }
+  100% { box-shadow: 0 0 0 9px transparent; }
+}
+@media (prefers-reduced-motion: reduce) { .tl-now { animation: none; } }
+@media only screen and (max-width: 500px) {
+  .tl-axis { margin-left: 0; }
+  .tl-row { grid-template-columns: 1fr; row-gap: 2px; padding: 6px 0; }
+  .tl-dates { display: inline; font-size: 11px; }
+  .tl-dates::before { content: " · "; }
+  .tl-track { height: 18px; }
+}

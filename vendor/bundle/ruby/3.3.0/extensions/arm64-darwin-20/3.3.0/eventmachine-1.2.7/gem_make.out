@@ -1,0 +1,20 @@
+current directory: /Users/vincet/repos/portfoliosite_v2/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/vincet/.local/share/mamba/envs/portfoliosite/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/vincet/repos/portfoliosite_v2/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20261006-16325-duonzn sitelibdir\=./.gem.20261006-16325-duonzn clean
+
+current directory: /Users/vincet/repos/portfoliosite_v2/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20261006-16325-duonzn sitelibdir\=./.gem.20261006-16325-duonzn
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+ld: warning: duplicate -rpath '/Users/vincet/.local/share/mamba/envs/portfoliosite/lib' ignored
+
+current directory: /Users/vincet/repos/portfoliosite_v2/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20261006-16325-duonzn sitelibdir\=./.gem.20261006-16325-duonzn install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20261006-16325-duonzn
+
+current directory: /Users/vincet/repos/portfoliosite_v2/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20261006-16325-duonzn sitelibdir\=./.gem.20261006-16325-duonzn clean

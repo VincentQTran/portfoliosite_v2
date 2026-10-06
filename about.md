@@ -13,6 +13,8 @@ Hi,
 
 3 // Apart from my work in biology, you may find me fixing my serve at the tennis court, replaying songs by [Porter Robinson](https://porterrobinson.com/), or holding a [ZV-E1](https://electronics.sony.com/imaging/interchangeable-lens-cameras/all-interchangeable-lens-cameras/p/ilczve1-b?srsltid=AfmBOoo72o1lCGdVkzeaB-FbwMjyOribLXIrGL_qAOi64W1AyfmWVRMG) and filming random vlogs.
 
+{% include timeline.html %}
+
 ## Selected Publications
 
 <div class="pub"><a class="pub-link" href="https://doi.org/10.1126/science.aea1820"><strong>Rapid directed evolution guided by protein language models and epistatic interactions</strong></a><span class="pub-detail"><strong>V. Q. Tran</strong>, M. Nemeth, L. J. Bartie, S. S. Chandrasekaran, A. Fanton, H. C. Moon, B. L. Hie, S. Konermann, P. D. Hsu.</span><span class="pub-journal"><em>Science</em>. 2026</span></div>
